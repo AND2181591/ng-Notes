@@ -1,0 +1,13 @@
+.note-wrapper {
+    background: #ebebeb;
+    padding: 16px;
+}
+
+.footer-wrapper {
+    position: fixed;
+    bottom: 10px;
+    margin-bottom: -10px;
+    width: 100%;
+    min-height: 100px;
+    background: #f7f7f7;
+}
