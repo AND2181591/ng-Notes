@@ -1,7 +1,9 @@
-<div class="note-wrapper">
-    <app-notes></app-notes>
-</div>
-
-<div class="footer-wrapper">
-    <app-footer></app-footer>
+<div class="ui container">
+    <div class="ui secondary pointing menu">
+        <a routerLink="/home" routerLinkActive="active" class="item" >Home</a>
+        <a routerLink="/notes" routerLinkActive="active" class="item">Notes</a>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
 </div>

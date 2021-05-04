@@ -2,24 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material.module';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { NotesComponent } from './notes/notes.component';
-import { NoteListComponent } from './notes/note-list/note-list.component';
-import { FooterComponent } from './footer/footer.component';
+import { NotesModule } from './notes/notes.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotesComponent,
-    NoteListComponent,
-    FooterComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule, 
-    MaterialModule
+    NotesModule, 
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
