@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { NotesModule } from './notes/notes.module';
-
 
 
 @NgModule({
@@ -19,8 +17,7 @@ import { NotesModule } from './notes/notes.module';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, 
-    NotesModule, 
+    BrowserAnimationsModule,  
     AppRoutingModule
   ],
   providers: [],
